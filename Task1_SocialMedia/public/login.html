@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <title>Log in – Buzz</title>
+</head>
+<body class="auth-page">
+  <div class="split">
+    <div class="hero">
+      <div class="brand"><span><i class="ti ti-bolt"></i></span>Buzz</div>
+      <h2>See what your people are up to.</h2>
+      <p>Share moments, follow friends and join the conversation.</p>
+      <div class="collage">
+        <img class="ph p1" src="https://picsum.photos/seed/buzz1/360/480" alt="" />
+        <img class="ph p2" src="https://picsum.photos/seed/buzz2/380/360" alt="" />
+        <img class="ph p3" src="https://picsum.photos/seed/buzz3/400/340" alt="" />
+        <div class="chip c1"><i class="ti ti-heart-filled"></i> 2.4k likes</div>
+        <div class="chip c2"><i class="ti ti-user-plus"></i> Ayesha followed you</div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="formcard">
+        <h1>Welcome back</h1>
+        <p class="sub">Log in to see what's new.</p>
+        <form id="authForm" data-mode="login">
+          <label class="field"><i class="ti ti-mail"></i><input type="email" name="email" placeholder="Email" required /></label>
+          <label class="field"><i class="ti ti-lock"></i><input type="password" name="password" placeholder="Password" required /></label>
+          <div class="error" id="error"></div>
+          <button class="btn" type="submit">Log in</button>
+        </form>
+        <p class="switch">New to Buzz? <a href="register.html">Create an account</a></p>
+        <p class="demo">Want to look around first? Log in with <b>ayesha_k@demo.com</b> and password <b>password123</b>.</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

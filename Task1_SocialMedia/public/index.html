@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buzz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/extra.css" />
+</head>
+<body class="appbody">
+  <div class="app">
+    <aside class="side" id="side"></aside>
+    <main class="main" id="main">
+      <header class="top">
+        <div class="search">
+          <i class="ti ti-search"></i>
+          <input id="q" placeholder="Search people" autocomplete="off" />
+          <div id="sres" class="sres hidden"></div>
+        </div>
+        <div class="bellwrap">
+          <button class="ic bell" data-a="bell" aria-label="Notifications"><i class="ti ti-bell"></i><b id="badge"></b></button>
+          <div id="npanel" class="npanel hidden"></div>
+        </div>
+        <button class="btn" data-a="compose"><i class="ti ti-plus"></i> Create a post</button>
+      </header>
+      <div id="view"></div>
+    </main>
+  </div>
+  <div id="modal"></div>
+  <div id="story"></div>
+  <div id="toast" class="toast"></div>
+  <script src="js/common.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
